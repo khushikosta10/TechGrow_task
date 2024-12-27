@@ -11,11 +11,17 @@
         <h1>Job Search Portal</h1>
         <nav>
             <a href="#home">Home</a>
-            <a href="#jobs">Jobs</a>
+            <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
     <main>
+        <section id="home">
+            <h2>Welcome to the Job Search Portal</h2>
+            <p>Find your dream job by searching through our comprehensive job listings, categorized by role and location.</p>
+        </section>
+
         <section id="search">
             <h2>Search for Jobs</h2>
             <div class="filters">
@@ -44,11 +50,26 @@
                 </select>
             </div>
         </section>
+
         <section id="job-listings">
             <h2>Job Listings</h2>
-            <div id="results"></div>
+            <div id="results" class="job-list-container"></div>
+        </section>
+
+        <!-- Moved About section below -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a team dedicated to helping job seekers find the best opportunities in the tech industry. Our platform allows you to search for jobs based on title, location, category, and job type.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out!</p>
+            <p>Email: support@jobportal.com</p>
+            <p>Phone: +1 234 567 890</p>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Job Search Portal</p>
     </footer>
