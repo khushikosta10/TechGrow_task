@@ -1,4 +1,4 @@
-// Sample Job Data with Categories and Salary
+// Sample Job Data
 const jobs = [
     { title: "Web Developer", location: "Mumbai", company: "TechCorp", category: "Developer", salary: 60000, jobType: "Full-time" },
     { title: "Software Engineer", location: "Delhi", company: "InnoSoft", category: "Developer", salary: 70000, jobType: "Remote" },
@@ -62,22 +62,9 @@ function searchJobs() {
 // Function to open job application modal
 function openApplicationModal(jobTitle) {
     document.getElementById('application-modal').style.display = 'block';
-    // Capture jobTitle if needed
 }
 
 // Function to close the application modal
 function closeApplicationModal() {
     document.getElementById('application-modal').style.display = 'none';
-}
-
-// Form submit (simulation)
-document.getElementById('application-form').onsubmit = function(e) {
-    e.preventDefault();
-    alert('Application submitted!');
-    closeApplicationModal();
-}
-
-// Dark mode toggle
-function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
 }
